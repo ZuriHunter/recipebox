@@ -34,4 +34,7 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+  
+  #Required for Devise Gem
+  config.action_mailer.default_url_options = { host: 'muscular-white-harbor-93-167782.usw1-2.nitrousbox.com', port: 3000 }
 end

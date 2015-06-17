@@ -1,4 +1,6 @@
 class Recipe < ActiveRecord::Base
+  belongs_to :user
+  
   has_many :ingredients
   has_many :directions
   #sets up the nested form for cocoon gem to draw the correlation between ingredients/directions with recipe
